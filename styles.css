@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #E6EFF6;
+}
+#container{
+  max-width: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.padding{
+  padding: 2rem;
+}
+.whiteBox{
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  
+}
+.WBheader{
+  color: #12b2bb;
+  font-size: 1.6rem;
+  font-family: quicksand;
+  margin-bottom: 1rem;
+}
+.WBsemi-text{
+  color: rgb(159, 209, 22);
+  font-size: 1.2rem;
+  font-family: quicksand;
+  margin-bottom: 0.5rem;
+}
+.WBtext{
+  color: rgba(1, 1, 1, 0.3);
+  font-family: quicksand;
+  font-weight: 600;
+}
+.box-holder{
+  display: flex;
+  flex-direction: row;
+}
+.darkerBlueBox{
+  background-color: #2BB3B1;
+  max-width: 50%;
+  padding: 2rem;
+  flex-grow: 1;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.DBBheader{
+  color: white;
+  font-size: 1.4rem;
+  font-family: quicksand;
+  margin-left: 1.5rem;
+}
+.DBBpriceHolder{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 1.5rem;
+}
+.DBBprice{
+  font-size: 2.4rem;
+  color: white;
+  font-family: handjet;
+  font-weight: 600;
+}
+.DBBlowOpacityText{
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.4rem;
+}
+.DBBdetails{
+  color: white;
+  font-size: 1rem;
+  font-family: quicksand;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+.DBBsignUpLink{
+  max-width: 85%;
+  min-height: 3rem;
+  display: block;
+  background-color: #BFDF32;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: quicksand;
+  font-size: 1rem;
+  line-height: 2.8rem;
+  padding-left: 6rem;
+  margin-left: 1.5rem;
+}
+.lighterBlueBox{
+  background-color: #4ABEBD;
+  max-width: 50%;
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+}
+.LBBheader{
+  color: white;
+  font-size: 1.2rem;
+  font-family: quicksand;
+  margin-bottom: 1rem;
+}
+.LBBlist{
+  list-style-type: none;
+  color: white;
+  font-size: 0.9rem;
+  font-family: quicksand;
+  line-height: 1.3rem;
+}
+@media screen and (max-width:426px) {
+  #container{
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  
+  .box-holder{
+    flex-direction: column;
+  }
+  .darkerBlueBox{
+  max-width: 100%;
+  border-bottom-left-radius: 0;
+  }
+  .DBBheader{
+    margin-left: 0;
+  }
+  .DBBpriceHolder{
+    margin-left: 0;
+  }
+  .DBBdetails{
+    margin-left: 0;
+  }
+  .DBBsignUpLink{
+    margin-left: 0;
+    max-width: 100%;
+    padding-left: 7rem;
+  }
+  .lighterBlueBox{
+    max-width: 100%;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+}
+
